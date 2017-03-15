@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A3 Chat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="main";>
+
+		<div id="userTitle";>
+	       <b><center><p id="userNameTitle"></p></center></b>
+	    </div>
+
+	    <div id="onlineUserTitle";>
+	        <b><center><u>Online Users:</u></center></b>
+	    </div>
+
+	    <div id="chatWindow";>	<!-- id used to style the div in css  -->
+	        <ul id="messages"></ul>		<!-- list id used to be identified in client.js  -->
+	    </div>
+
+	    <div id="onlineUserList">
+	        <center><ul id="userList"></ul></center>
+	    </div>
+
+	    <div style="background-color:#CC99FF;clear:both">
+
+	        <form action="">
+             <input id="m" autocomplete="off" /><button>Send</button>
+            </form>
+	    </div>
+    </div>	
+    
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
